@@ -1,0 +1,29 @@
+.section-skills{
+    background-image: linear-gradient(to right bottom ,rgba($color-primary-light,0.8),rgba($color-primary-dark,0.8)), url("../../img/background1.jpg");
+    background-size: cover;
+    position: relative;
+    padding : 10rem 0 ;
+    clip-path: ellipse(70% 50% at 50% 50%);
+    margin-top: -20rem;
+}
+.skill-box{
+    background-color: rgba($color-white, .8);
+    font-size: 1.5rem;
+    padding: 2.5rem 2.5rem 5rem 2.5rem;
+    text-align: center;
+    border-radius: 5rem;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+    transition : all 0.2s;
+    &__icon{
+        font-size: 6rem;
+        margin-bottom: 1.5rem;
+        display: inline-block;
+        background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+    &:hover{
+        cursor: pointer;
+        transform: translateY(-1.5rem) scale(1.03);
+    }
+}
