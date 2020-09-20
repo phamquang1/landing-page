@@ -38,6 +38,9 @@
     width: 100%;
     position: none;
 }
+  @include respond(tab-land){
+    margin-bottom: 4rem;
+  }
   &-box {
     position: absolute;
     transform-style: preserve-3d;
@@ -60,6 +63,7 @@
         @include respond(phone){
           margin-bottom: 4rem;
         }
+        
       }
       @include respond(phone){
         overflow: visible;
