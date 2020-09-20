@@ -5,6 +5,9 @@
     padding : 10rem 0 ;
     clip-path: ellipse(70% 50% at 50% 50%);
     margin-top: -20rem;
+    @include respond(phone){
+        padding : 10rem 4rem;
+    }
 }
 .skill-box{
     background-color: rgba($color-white, .8);
@@ -14,6 +17,10 @@
     border-radius: 5rem;
     box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
     transition : all 0.2s;
+    @include respond(phone){
+        margin-bottom: 1rem;
+        // width: 75%;
+    }
     &__icon{
         font-size: 6rem;
         margin-bottom: 1.5rem;
